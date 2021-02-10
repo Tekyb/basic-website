@@ -1,0 +1,48 @@
+.module {
+  padding: 50px 0;
+}
+footer {
+  background-color: rgb(17, 17, 17);
+  color: #999;
+  font-size: 13px;
+}
+.footer-items {
+  padding: 40px 0;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+.footer-item1,
+.footer-item2,
+.footer-item3 {
+  width: 30%;
+  margin-right: 5%;
+}
+.footer-item3 {
+  margin-right: 0;
+}
+.par1 {
+  font-size: 15px;
+  color: #eee;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  letter-spacing: -0.1px;
+  font-weight: 500;
+}
+.par2 {
+  font-size: 13px;
+  margin-bottom: 15px;
+  color: #999;
+  line-height: 1.8;
+}
+.rowDays {
+  border-top: 1px dotted rgba(255, 255, 255, 0.1);
+  padding: 6px 0;
+}
+.columnDays {
+  flex-direction: column;
+  padding: 10px;
+}
+.right {
+  float: right;
+}

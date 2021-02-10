@@ -1,0 +1,41 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat&display=swap&subset=latin-ext");
+@import url("https://fonts.googleapis.com/css?family=PT+Sans&display=swap&subset=latin-ext");
+html,
+body {
+  margin: 0;
+  width: 100%;
+  font-family: "PT Sans", sans-serif;
+}
+header {
+  font-family: "Montserrat", sans-serif;
+}
+main {
+  width: 100%;
+  margin-bottom: auto;
+}
+p {
+  margin: 0;
+  font-size: 25px;
+}
+a {
+  text-decoration: none;
+}
+a:hover {
+  color: #666666;
+  text-decoration: none;
+}
+li {
+  padding: 0 15px;
+}
+ul {
+  margin: 0;
+}
+.container {
+  max-width: 1230px;
+  margin: 0 auto;
+}
+@media (min-width: 790px) {
+  .container {
+    padding: 0 50px;
+  }
+}

@@ -1,0 +1,260 @@
+.projects_link {
+  color: black;
+}
+.testImage {
+  color: white;
+  height: 272px;
+  width: 100%;
+  background-color: black;
+  padding-top: 20px;
+  margin-bottom: 15px;
+  text-align: center;
+}
+.breadcrumb {
+  padding: 5px 10px;
+}
+.pages {
+  .grid-container {
+    margin-top: 25px;
+  }
+}
+.page-header {
+  padding: 15px 0;
+  padding-top: 88px;
+  background-color: darkgrey;
+  border: (1px solid #e9e9e9);
+}
+.page-title {
+  font-weight: 700;
+  font-size: 35px;
+  text-transform: uppercase;
+  font-family: Montserrat;
+  color: #333;
+  letter-spacing: -0.2px;
+  line-height: 1.3;
+}
+.dark-header {
+  header {
+    background: #222;
+  }
+}
+.location {
+  padding: 10px 0;
+  color: #777;
+  font-weight: 600;
+  border: (1px solid #e9e9e9);
+}
+.projects {
+  .card {
+    width: auto;
+  }
+  .grid-container {
+    grid-template-columns: auto auto;
+  }
+  .grid-item {
+    width: -webkit-fill-available;
+  }
+  .card-body {
+    width: -webkit-fill-available;
+  }
+  .card-link {
+    font-size: 13px;
+    line-height: 30px;
+    color: #fff;
+    font-weight: 800;
+    padding: 2px 15px 3px 15px;
+    border-radius: 2px 2px 2px 2px;
+    background: #fab702;
+    z-index: 2 !important;
+    display: block;
+    font-family: "Montserrat";
+  }
+  @media (max-width: 1024px) {
+    .grid-container {
+      width: auto;
+      grid-template-columns: auto;
+    }
+    .card-image {
+      width: -webkit-fill-available;
+      margin: 0;
+    }
+    .card-content {
+      padding: 0;
+      visibility: inherit;
+      width: fit-content;
+      height: fit-content;
+    }
+  }
+}
+.service {
+  .card-title {
+    color: #333;
+    font-family: "Monsterrat";
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 1.7;
+    letter-spacing: -0.2px;
+  }
+  .card-content-text {
+    font-family: "PT Sans";
+    color: #777;
+    font-size: 14px;
+    margin-bottom: 15px;
+  }
+  .card-link {
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 14px;
+    letter-spacing: 0.3px;
+  }
+}
+.about {
+  .card {
+    width: auto;
+  }
+  .card-title {
+    color: #333;
+    font-family: "Monsterrat";
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 1.7;
+    letter-spacing: -0.2px;
+  }
+  .card-content-text {
+    font-family: "PT Sans";
+    color: #777;
+    font-size: 14px;
+    margin-bottom: 15px;
+    line-height: 1.7;
+  }
+  .card-link {
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 14px;
+    letter-spacing: 0.3px;
+  }
+  .grid-container {
+    grid-template-columns: auto auto;
+  }
+  .grid-item {
+    width: -webkit-fill-available;
+  }
+  .card-body {
+    width: -webkit-fill-available;
+  }
+  @media (max-width: 1024px) {
+    .grid-container {
+      width: auto;
+      grid-template-columns: auto;
+    }
+    .card-image {
+      width: -webkit-fill-available;
+      margin: 0;
+    }
+    .card-content {
+      padding: 0;
+      visibility: inherit;
+      width: fit-content;
+      height: fit-content;
+    }
+  }
+}
+.contactus {
+  .page-header-image {
+    background-image: url("../images/construction.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    height: fit-content;
+    background-size: cover;
+  }
+  .page-title-text {
+    padding-top: 214px;
+    padding-bottom: 120px;
+  }
+  .title-text {
+    color: white;
+    text-shadow: 1px 1px 1px #000;
+  }
+  .page-header {
+    margin-top: 0;
+  }
+  .page-title {
+    font-size: 26px;
+    text-transform: unset;
+  }
+  .content {
+    display: flex;
+    flex-direction: row;
+  }
+  .contact-message {
+    padding: 0 20px;
+    width: 100%;
+  }
+  .contact-text {
+    margin-top: 60px !important;
+    margin-bottom: 40px;
+  }
+  .form-body {
+  }
+  .company-info {
+    padding: 0 20px;
+    width: 100%;
+  }
+  .gps-map {
+    height: 422px;
+    width: 545px;
+  }
+  .row {
+    margin-bottom: 30px;
+  }
+  .addresses {
+    display: flex;
+    flex-direction: row;
+  }
+  .info-inner {
+    margin-top: 60px !important;
+    margin-bottom: 40px !important;
+    padding: 0 20px;
+    width: -webkit-fill-available;
+  }
+  .info-title {
+    font-family: Monsterrat;
+    font-weight: 400;
+    color: #333;
+    font-size: 18px;
+    margin-bottom: 12px;
+    text-transform: uppercase;
+    letter-spacing: -0.2px;
+    line-height: 1.7;
+  }
+  .info-content {
+    font-family: PT Sans;
+    color: #777;
+    font-size: 14px;
+    line-height: 1.7;
+  }
+  @media (max-width: 1024px) {
+    .content {
+      display: flex;
+      flex-direction: column;
+    }
+    .gps-map {
+      width: auto;
+    }
+  }
+}
+@media (max-width: 1024px) {
+  .grid-item {
+    width: auto;
+    padding: 10px;
+  }
+  .card-body {
+    padding: 0;
+    width: -webkit-fill-available;
+  }
+  .page-title {
+    text-align: center;
+  }
+}
