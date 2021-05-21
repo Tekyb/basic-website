@@ -3,7 +3,7 @@ import { graphql, useStaticQuery } from "gatsby"
 import { Link } from "gatsby"
 import Card from "react-bootstrap/Card"
 
-import "./item.scss"
+import "../../../styles.scss"
 
 const TestDataPic = () => {
   const data = useStaticQuery(graphql`

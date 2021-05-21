@@ -16,7 +16,7 @@ module.exports.onCreateNode = ({ node, actions }) => {
 
 module.exports.createPages = async ({ graphql, actions }) => {
   const { createPage } = actions
-  const postTemplate = path.resolve("./src/components/posts/About.js")
+  const postTemplate = path.resolve("./src/pages/components/common/posts/About.js")
   const res = await graphql(`
     query {
       allMarkdownRemark {

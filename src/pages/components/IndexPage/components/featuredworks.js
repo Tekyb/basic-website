@@ -1,6 +1,6 @@
 import React from "react"
 
-import TestData from "./data"
+import TestData from "../../common/posts/data"
 
 const FeaturedWorks = () => (
   <div className="items">

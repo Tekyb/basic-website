@@ -1,20 +1,20 @@
 import React from "react"
 
-import Layout from "../components/layout"
-import SEO from "../components/seo"
+import Layout from "../../layout"
+import SEO from "../../seo"
 
 import { Breadcrumb } from "gatsby-plugin-breadcrumb"
 
-import "../components/pages.scss"
+import "../pages.scss"
 
-import DataGaleria from "../components/index/dataGaleria"
+import TestDataPic from "../common/posts/datapic"
 
-const ProjectsPage = ({ location }) => (
+const AboutPage = ({ location }) => (
   <Layout>
-    <SEO title="Projects" />
+    <SEO title="About" />
     <div className="page-header">
       <div className="container">
-        <p className="page-title">Projects</p>
+        <p className="page-title">About</p>
       </div>
     </div>
     <div className="location">
@@ -22,7 +22,7 @@ const ProjectsPage = ({ location }) => (
         <Breadcrumb
           location={location}
           style={{ color: "#777" }}
-          crumbLabel="Projects"
+          crumbLabel="About"
           crumbStyle={{ color: "#999" }}
           crumbActiveStyle={{ color: "#777" }}
           crumbWrapperStyle={{ border: "none", background: "none" }}
@@ -30,13 +30,13 @@ const ProjectsPage = ({ location }) => (
       </div>
     </div>
     <div className="pages">
-      <div className="projects">
+      <div className="about">
         <div className="container">
-          <DataGaleria />
+          <TestDataPic />
         </div>
       </div>
     </div>
   </Layout>
 )
 
-export default ProjectsPage
+export default AboutPage

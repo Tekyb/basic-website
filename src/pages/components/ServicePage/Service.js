@@ -1,13 +1,13 @@
 import React from "react"
 
-import Layout from "../components/layout"
-import SEO from "../components/seo"
+import Layout from "../../layout"
+import SEO from "../../seo"
 
 import { Breadcrumb } from "gatsby-plugin-breadcrumb"
 
-import "../components/pages.scss"
+import "../pages.scss"
 
-import TestDataPic from "../components/index/datapic"
+import TestDataPic from "../common/posts/datapic"
 
 const ServicePage = ({ location }) => (
   <Layout>

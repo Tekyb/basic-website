@@ -1,6 +1,6 @@
 import React from "react"
 
-import TestDataPic from "./datapic"
+import TestDataPic from "../../common/posts/datapic"
 import "./mainhead.scss"
 
 const MainHead = () => (

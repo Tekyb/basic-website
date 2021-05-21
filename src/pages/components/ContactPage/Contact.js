@@ -4,12 +4,12 @@ import Form from "react-bootstrap/Form"
 import Row from "react-bootstrap/Row"
 import Col from "react-bootstrap/Col"
 
-import Layout from "../components/layout"
-import SEO from "../components/seo"
+import Layout from "../../layout"
+import SEO from "../../seo"
 
 import { Breadcrumb } from "gatsby-plugin-breadcrumb"
 
-import "../components/pages.scss"
+import "../pages.scss"
 
 const ContactPage = ({ location }) => (
   <Layout>
