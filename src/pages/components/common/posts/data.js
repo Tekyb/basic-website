@@ -1,28 +1,27 @@
-import React from "react"
-import { graphql, useStaticQuery } from "gatsby"
-import { Link } from "gatsby"
-import Card from "react-bootstrap/Card"
+import React from 'react';
+import { graphql, useStaticQuery } from 'gatsby';
+import { Link } from 'gatsby';
+import Card from 'react-bootstrap/Card';
 
-import "../../../styles.scss"
+import '../../../styles.scss';
+import './item.scss';
 
 const TestData = () => {
-  const data = useStaticQuery(
-    graphql`
-      query {
-        allMarkdownRemark {
-          edges {
-            node {
-              excerpt
-              frontmatter {
-                title
-                link
-              }
+  const data = useStaticQuery(graphql`
+    query {
+      allMarkdownRemark {
+        edges {
+          node {
+            excerpt
+            frontmatter {
+              title
+              link
             }
           }
         }
       }
-    `
-  )
+    }
+  `);
   return (
     <div className="grid-container">
       {data.allMarkdownRemark.edges.map(edge => {
@@ -30,12 +29,8 @@ const TestData = () => {
           <div className="grid-item">
             <Card>
               <Card.Body>
-                <Card.Header className="card-title">
-                  {edge.node.frontmatter.title}
-                </Card.Header>
-                <Card.Text className="card-content">
-                  {edge.node.excerpt}
-                </Card.Text>
+                <Card.Header className="card-title">{edge.node.frontmatter.title}</Card.Header>
+                <Card.Text className="card-content">{edge.node.excerpt}</Card.Text>
                 <Card.Text className="card-link">
                   <Link to={edge.node.frontmatter.link} className="card-link">
                     Read more
@@ -44,9 +39,9 @@ const TestData = () => {
               </Card.Body>
             </Card>
           </div>
-        )
+        );
       })}
     </div>
-  )
-}
-export default TestData
+  );
+};
+export default TestData;

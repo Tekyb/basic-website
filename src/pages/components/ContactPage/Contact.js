@@ -1,18 +1,17 @@
-import React from "react"
+import React from 'react';
 
-import Form from "react-bootstrap/Form"
-import Row from "react-bootstrap/Row"
-import Col from "react-bootstrap/Col"
+import Form from 'react-bootstrap/Form';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
 
-import Layout from "../../layout"
-import SEO from "../../seo"
+import SEO from '../../seo';
 
-import { Breadcrumb } from "gatsby-plugin-breadcrumb"
+import { Breadcrumb } from 'gatsby-plugin-breadcrumb';
 
-import "../pages.scss"
+import './Contact.scss';
 
 const ContactPage = ({ location }) => (
-  <Layout>
+  <div>
     <SEO title="Contact" />
     <div className="contactus">
       <div className="page-header-image">
@@ -20,22 +19,22 @@ const ContactPage = ({ location }) => (
           <div className="title-text">
             <p
               style={{
-                fontSize: "45px",
-                fontWeight: "700",
-                fontFamily: "Montserrat",
-                lineHeight: "1.3",
-                textTransform: "uppercase",
-                margin: "-5px 0 2px -2px",
-                letterSpacing: "0",
+                fontSize: '45px',
+                fontWeight: '700',
+                fontFamily: 'Montserrat',
+                lineHeight: '1.3',
+                textTransform: 'uppercase',
+                margin: '-5px 0 2px -2px',
+                letterSpacing: '0',
               }}
             >
               GET IN TOUCH WITH US.
             </p>
             <p
               style={{
-                fontSize: "17px",
-                fontWeight: "300",
-                fontFamily: "PT Sans",
+                fontSize: '17px',
+                fontWeight: '300',
+                fontFamily: 'PT Sans',
               }}
             >
               Contact The Construction Company
@@ -52,11 +51,11 @@ const ContactPage = ({ location }) => (
         <div className="container">
           <Breadcrumb
             location={location}
-            style={{ color: "#777" }}
+            style={{ color: '#777' }}
             crumbLabel="Contact"
-            crumbStyle={{ color: "#999" }}
-            crumbActiveStyle={{ color: "#777" }}
-            crumbWrapperStyle={{ border: "none", background: "none" }}
+            crumbStyle={{ color: '#999' }}
+            crumbActiveStyle={{ color: '#777' }}
+            crumbWrapperStyle={{ border: 'none', background: 'none' }}
           />
         </div>
       </div>
@@ -67,9 +66,8 @@ const ContactPage = ({ location }) => (
               <div className="contact-message">
                 <div className="contact-text">
                   <p className="info-content">
-                    Call or submit our online form to request an estimate or for
-                    general questions about U.S. Certified Contractors and our
-                    services. We look forward to serving you!
+                    Call or submit our online form to request an estimate or for general questions about U.S. Certified
+                    Contractors and our services. We look forward to serving you!
                   </p>
                 </div>
                 <div className="form-body">
@@ -97,11 +95,7 @@ const ContactPage = ({ location }) => (
                     </Row>
                     <Row>
                       <Col>
-                        <Form.Control
-                          as="textarea"
-                          rows="5"
-                          placeholder="Message"
-                        />
+                        <Form.Control as="textarea" rows="5" placeholder="Message" />
                       </Col>
                     </Row>
                   </Form>
@@ -128,8 +122,10 @@ const ContactPage = ({ location }) => (
                 </div>
                 <div className="gps-map">
                   <iframe
-                    style={{ width: "100%", height: "100%", border: "0" }}
+                    style={{ width: '100%', height: '100%', border: '0' }}
+                    title="Maps to the company HQ"
                     src=""
+                    loading="lazy"
                   ></iframe>
                 </div>
               </div>
@@ -138,7 +134,7 @@ const ContactPage = ({ location }) => (
         </div>
       </div>
     </div>
-  </Layout>
-)
+  </div>
+);
 
-export default ContactPage
+export default ContactPage;

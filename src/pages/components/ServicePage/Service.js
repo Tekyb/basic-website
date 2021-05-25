@@ -1,16 +1,15 @@
-import React from "react"
+import React from 'react';
 
-import Layout from "../../layout"
-import SEO from "../../seo"
+import SEO from '../../seo';
 
-import { Breadcrumb } from "gatsby-plugin-breadcrumb"
+import { Breadcrumb } from 'gatsby-plugin-breadcrumb';
 
-import "../pages.scss"
+import './Service.scss';
 
-import TestDataPic from "../common/posts/datapic"
+import TestDataPic from '../common/posts/datapic';
 
 const ServicePage = ({ location }) => (
-  <Layout>
+  <div>
     <SEO title="Service" />
     <div className="page-header">
       <div className="container">
@@ -21,11 +20,11 @@ const ServicePage = ({ location }) => (
       <div className="container">
         <Breadcrumb
           location={location}
-          style={{ color: "#777" }}
+          style={{ color: '#777' }}
           crumbLabel="Service"
-          crumbStyle={{ color: "#999" }}
-          crumbActiveStyle={{ color: "#777" }}
-          crumbWrapperStyle={{ border: "none", background: "none" }}
+          crumbStyle={{ color: '#999' }}
+          crumbActiveStyle={{ color: '#777' }}
+          crumbWrapperStyle={{ border: 'none', background: 'none' }}
         />
       </div>
     </div>
@@ -36,7 +35,7 @@ const ServicePage = ({ location }) => (
         </div>
       </div>
     </div>
-  </Layout>
-)
+  </div>
+);
 
-export default ServicePage
+export default ServicePage;

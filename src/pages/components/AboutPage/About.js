@@ -1,16 +1,15 @@
 import React from "react"
 
-import Layout from "../../layout"
 import SEO from "../../seo"
 
 import { Breadcrumb } from "gatsby-plugin-breadcrumb"
 
-import "../pages.scss"
+import "./About.scss"
 
 import TestDataPic from "../common/posts/datapic"
 
 const AboutPage = ({ location }) => (
-  <Layout>
+  <div>
     <SEO title="About" />
     <div className="page-header">
       <div className="container">
@@ -36,7 +35,7 @@ const AboutPage = ({ location }) => (
         </div>
       </div>
     </div>
-  </Layout>
+  </div>
 )
 
 export default AboutPage

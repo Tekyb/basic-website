@@ -1,11 +1,11 @@
-import React from "react"
-import { graphql } from "gatsby"
+import React from 'react';
+import { graphql } from 'gatsby';
 
-import Layout from "../../../layout"
+import Layout from '../../../layout';
 
-import "../../pages.scss"
+import '../../../pages.scss';
 export const query = graphql`
-  query($slug: String!) {
+  query ($slug: String!) {
     markdownRemark(fields: { slug: { eq: $slug } }) {
       frontmatter {
         title
@@ -14,8 +14,8 @@ export const query = graphql`
       html
     }
   }
-`
-const About = (props) => {
+`;
+const About = props => {
   return (
     <Layout>
       <div className="page-header">
@@ -26,12 +26,12 @@ const About = (props) => {
       <div className="pages">
         <div className="about">
           <div className="container">
-		   <div dangerouslySetInnerHTML={{__html: props.data.markdownRemark.html}}></div>
-		  </div>
+            <div dangerouslySetInnerHTML={{ __html: props.data.markdownRemark.html }}></div>
+          </div>
         </div>
       </div>
     </Layout>
-  )
-}
+  );
+};
 
-export default About
+export default About;

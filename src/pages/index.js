@@ -5,6 +5,10 @@ import IndexPage from './components/IndexPage';
 import './styles.scss';
 
 const Index = () => {
-  return <IndexPage />;
+  return (
+    <Layout>
+      <IndexPage />
+    </Layout>
+  );
 };
 export default Index;

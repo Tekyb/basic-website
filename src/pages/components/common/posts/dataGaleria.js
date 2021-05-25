@@ -1,9 +1,10 @@
-import React from "react"
-import { graphql, useStaticQuery } from "gatsby"
-import { Link } from "gatsby"
-import Card from "react-bootstrap/Card"
+import React from 'react';
+import { graphql, useStaticQuery } from 'gatsby';
+import { Link } from 'gatsby';
+import Card from 'react-bootstrap/Card';
 
-import "../../../styles.scss"
+import '../../../styles.scss';
+import './item.scss';
 
 const DataGaleria = () => {
   const data = useStaticQuery(graphql`
@@ -21,26 +22,21 @@ const DataGaleria = () => {
         }
       }
     }
-  `)
+  `);
   return (
     <div className="grid-container content-in-pictures">
       {data.allMarkdownRemark.edges.map(edge => {
-        let title = edge.node.frontmatter.title
-        let link = "http://localhost:8000/"+edge.node.frontmatter.link
         return (
           <div className="grid-item">
             <Card>
               <Card.Body>
                 <div className="head-items">
-                  <Card.Header style={{ color: "white", fontSize: "16px" }}>
+                  <Card.Header style={{ color: 'white', fontSize: '16px' }}>
                     <div className="card-image">
                       <div className="card-content">
-                        <Card.Title className="card-title">{title}</Card.Title>
-                        <Card.Text className="card-link">
-                          <Link
-                            to={link}
-                            className="card-link"
-                          >
+                        <Card.Title className="card-title">{edge.node.frontmatter.title}</Card.Title>
+                        <Card.Text>
+                          <Link to={'http://localhost:8000/' + edge.node.frontmatter.link} className="card-link">
                             Read more
                           </Link>
                         </Card.Text>
@@ -51,9 +47,9 @@ const DataGaleria = () => {
               </Card.Body>
             </Card>
           </div>
-        )
+        );
       })}
     </div>
-  )
-}
-export default DataGaleria
+  );
+};
+export default DataGaleria;

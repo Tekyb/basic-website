@@ -1,7 +1,5 @@
 import React from "react"
 
-import Layout from "../../layout"
-
 import Carouselnav from "./components/carousel.js"
 import FeaturedWorks from "./components/featuredworks.js"
 import NewestWorks from "./components/newestwork.js"
@@ -11,9 +9,10 @@ import MainHead from "./components/mainhead.js"
 import Certified from "./components/uscertified.js"
 
 import SEO from "../../seo"
+import "./Index.scss"
 
 const IndexPage = () => (
-  <Layout>
+  <div>
     <SEO title="Home" />
     <div className="main">
       <Carouselnav />
@@ -24,7 +23,7 @@ const IndexPage = () => (
       <FeaturedWorks />
       <OurClients />
     </div>
-  </Layout>
+  </div>
 )
 
 export default IndexPage

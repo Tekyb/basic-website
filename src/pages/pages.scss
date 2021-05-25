@@ -1,0 +1,92 @@
+.projects_link {
+  color: black;
+}
+.testImage {
+  color: white;
+  height: 272px;
+  width: 100%;
+  background-color: black;
+  padding-top: 20px;
+  margin-bottom: 15px;
+  text-align: center;
+}
+.breadcrumb {
+  padding: 5px 10px;
+}
+.pages {
+  .grid-container {
+    margin-top: 25px;
+  }
+}
+.page-header {
+  padding: 15px 0;
+  padding-top: 88px;
+  background-color: darkgrey;
+  border: (1px solid #e9e9e9);
+}
+.page-title {
+  font-weight: 700;
+  font-size: 35px;
+  text-transform: uppercase;
+  font-family: Montserrat;
+  color: #333;
+  letter-spacing: -0.2px;
+  line-height: 1.3;
+}
+.dark-header {
+  header {
+    background: #222;
+  }
+}
+.location {
+  padding: 10px 0;
+  color: #777;
+  font-weight: 600;
+  border: (1px solid #e9e9e9);
+}
+@media (max-width: 1024px) {
+  .grid-item {
+    width: auto;
+    padding: 10px;
+  }
+  .card-body {
+    padding: 0;
+    width: -webkit-fill-available;
+  }
+  .page-title {
+    text-align: center;
+  }
+}
+.grid-item {
+  width: -webkit-fill-available;
+}
+.card-image {
+  width: -webkit-fill-available;
+  margin: 0;
+}
+.card-content {
+  padding: 0;
+  visibility: inherit;
+  width: fit-content;
+  height: fit-content;
+}
+.card-title {
+  color: #333;
+  font-family: "Monsterrat";
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1.7;
+  letter-spacing: -0.2px;
+}
+.card-link {
+  font-size: 13px;
+  line-height: 30px;
+  color: #fff;
+  font-weight: 800;
+  padding: 2px 15px 3px 15px;
+  border-radius: 2px 2px 2px 2px;
+  background: #fab702;
+  z-index: 2 !important;
+  display: block;
+  font-family: "Montserrat";
+}
